@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shiksha IAS Pathshala</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #0d1b2a;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #1d3557, #457b9d);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 30px;
+      font-size: 30px;
+      color: #1d3557;
+    }
+
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1d3557;
+    }
+
+    .testimonial {
+      background: #1d3557;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .contact form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact button {
+      background: #e63946;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media(max-width: 768px){
+      .courses {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Shiksha IAS Pathshala</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Results</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Prepare Today, Lead Tomorrow</h1>
+  <p>UPSC | PCS | SSC | State Exams Coaching Institute</p>
+  <button onclick="alert('Admissions Open Now!')">Enroll Now</button>
+</section>
+
+<section class="section">
+  <h2>Our Courses</h2>
+  <div class="courses">
+    <div class="card">
+      <h3>UPSC GS Foundation</h3>
+      <p>Complete Prelims + Mains + Interview Guidance</p>
+    </div>
+
+    <div class="card">
+      <h3>UPPCS Program</h3>
+      <p>Integrated Course with Test Series</p>
+    </div>
+
+    <div class="card">
+      <h3>SSC & Railway</h3>
+      <p>Target Batch with Daily Practice</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <h2>Our Results</h2>
+  <p>500+ Selections in UPSC & State PCS Exams</p>
+  <p>"Best Coaching Institute with Personal Mentorship"</p>
+</section>
+
+<section class="section contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Shiksha IAS Pathshala | All Rights Reserved</p>
+</footer>
+
+<script>
+  function submitForm(event){
+    event.preventDefault();
+    alert("Thank you! We will contact you soon.");
+  }
+</script>
+
+</body>
+  </html>
